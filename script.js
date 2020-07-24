@@ -5,7 +5,6 @@ let currentRoundNumber = 1;
 // Write your code below:
 const generateTarget = secretTargetNumber => secretTargetNumber = Math.floor(Math.random() * 10);
 
-//console.log(generateTargetNumber());
 function compareGuesses(computerGuess, userGuess, secretTargetNumber) {
   if(computerGuess != userGuess){
     computerGuess1 = Math.abs(computerGuess - secretTargetNumber);
@@ -17,7 +16,6 @@ function compareGuesses(computerGuess, userGuess, secretTargetNumber) {
   } else 
   return true;
  };
-//console.log(compareGuesses(4,8, generateTargetNumber()));
 
 const updateScore = winner => {
   if (winner === 'human'){
@@ -28,9 +26,3 @@ const updateScore = winner => {
 };
 
 const advanceRound = () => currentRoundNumber++;
-
-const alert = (userGuess) => {
-  if (userGuess > 9 || userGuess < 0){
-    window.alert('Your number is out of range');
-  }
-};
